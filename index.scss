@@ -1,0 +1,32 @@
+.footer {
+  @extend .text-small;
+}
+
+.footer__links {
+  @extend .r-grid;
+  @include clear-floats;
+  margin: 0 0 spacing(3);
+
+  a {
+    @extend .anchor-4;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__copyright {
+  @include clear-floats;
+  color: $grey-dark;
+}
+
+.footer__copyright-text,
+.footer__copyright-links {
+  width: 50%;
+}
+
+.footer__copyright-links {
+  @include clear-floats;
+}
